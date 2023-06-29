@@ -5,7 +5,7 @@
 // greenCharacter.style.bottom = '100px'
 // document.body.append(greenCharacter)
 
-  
+
 
 // let pineTree = document.createElement('img')
 // pineTree.src = 'assets/pine-tree.png'
@@ -16,20 +16,43 @@
 
 
 function newImg(src, left, bottom) {
-    let img = document.createElement ('img')
+    let img = document.createElement('img')
     img.src = src;
     img.style.position = 'fixed';
     img.style.left = left + 'px';
     greenCharacter.style.bottom = bottom + 'px';
     document.body.append(img);
     return img
-  }
-  
+}
 
-  newImg('assets/green-character.gif', 100, 100);
-  newImg('assets/pine-tree.png', 400, 200);
-  newImg('assets/tree.png', 200, 300)
-  newImg('assets/pillar.png', 350, 100)
-  newImg('assets/crate.png', 150, 200)
-  newImg('assets/well.png', 500, 425)
-  
+// let sword = document.createElement('img')
+// sword.src = 'assets/sword.png'
+// sword.position = 'fixed'
+// sword.left = '500px'
+// sword.bottom = '405px'
+// document.body.append(sword)
+
+// sword.addEventListener('click', function(){
+//     sword.remove()
+// })
+
+
+function newItem(url, left, bottom) {
+    let img = newImage(url, left, bottom)
+
+    img.addEventListener('dblclick', function() {
+        img.remove()
+    })
+}
+
+newImg('assets/green-character.gif', 100, 100);
+newImg('assets/pine-tree.png', 400, 200);
+newImg('assets/tree.png', 200, 300)
+newImg('assets/pillar.png', 350, 100)
+newImg('assets/crate.png', 150, 200)
+newImg('assets/well.png', 500, 425)
+
+newItem('assets/sword.png', 500, 405)
+newItem('assets/shield.png', 165, 185)
+newItem('assets/staff.png', 600, 100)
+
