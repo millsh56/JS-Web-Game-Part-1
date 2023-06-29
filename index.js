@@ -28,3 +28,8 @@ function newImg(src, left, bottom) {
 
   newImg('assets/green-character.gif', 100, 100);
   newImg('assets/pine-tree.png', 400, 200);
+  newImg('assets/tree.png', 200, 300)
+  newImg('assets/pillar.png', 350, 100)
+  newImg('assets/crate.png', 150, 200)
+  newImg('assets/well.png', 500, 425)
+  
