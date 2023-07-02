@@ -38,10 +38,10 @@ function newImg(src, left, bottom) {
 
 
 function newItem(url, left, bottom) {
-    let img = newImage(url, left, bottom)
+    let item = newImage(url, left, bottom)
 
-    img.addEventListener('dblclick', function() {
-        img.remove()
+    item.addEventListener('dblclick', function() {
+        item.remove()
     })
 }
 
